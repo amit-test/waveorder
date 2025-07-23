@@ -1,1 +1,79 @@
+site_name: MkDocs
+site_url: https://github.com/amit-test/waveorder/
+site_description: Project documentation with Markdown.
+site_author: MkDocs Team
 
+repo_url: https://github.com/waveorder/
+edit_uri: blob/master/docs/
+
+theme:
+  name: mkdocs
+  color_mode: auto
+  user_color_mode_toggle: true
+  locale: en
+  analytics: {gtag: ''}
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - django
+
+nav:
+  - Home: docs/README.md
+  - Getting Started: docs/buyers-guide.md
+  - User Guide: docs/software-installation-guide.md
+  - Developer Guide: docs/development-guide.md
+  - About:
+    - Release Notes: docs/README.md
+    - Contributing: docs/README.md
+    - License: docs/README.md
+
+extra_css:
+  - css/extra.css
+
+exclude_docs: |
+  *.py
+
+markdown_extensions:
+  - toc:
+      permalink: 
+  - attr_list
+  - def_list
+  - tables
+  - pymdownx.highlight:
+      use_pygments: false
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - callouts
+  - mdx_gh_links:
+      user: mkdocs
+      repo: mkdocs
+  - mkdocs-click
+
+copyright: Copyright &copy; 2025.
+
+hooks:
+  - docs/hooks.py
+
+plugins:
+  - search
+  - redirects:
+      redirect_maps:
+        user-guide/plugins.md: dev-guide/plugins.md
+        user-guide/custom-themes.md: dev-guide/themes.md
+        user-guide/styling-your-docs.md: user-guide/choosing-your-theme.md
+  - autorefs
+  - literate-nav:
+      nav_file: README.md
+      implicit_index: true
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_section_style: list
+            members_order: source
+            show_root_heading: true
+            show_source: false
+            show_signature_annotations: true
+
+watch:
+  - mkdocs
