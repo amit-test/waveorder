@@ -76,4 +76,4 @@ plugins:
             show_signature_annotations: true
 
 watch:
-  - mkdocs
+  - waveorder
