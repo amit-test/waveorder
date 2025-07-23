@@ -7,3 +7,4 @@ mkdocs-click
 mkdocs-redirects
 mkdocs-autorefs
 mkdocs-literate-nav
+mkdocstrings
