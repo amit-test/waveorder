@@ -52,7 +52,7 @@ markdown_extensions:
 copyright: Copyright &copy; 2025.
 
 hooks:
-  - docs/examples/models/inplane_oriented_thick_pol3d.py
+  - docs/examples/test.py
 
 plugins:
   - search
