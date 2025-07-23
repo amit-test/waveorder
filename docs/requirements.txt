@@ -5,3 +5,4 @@ markdown-callouts
 mdx-gh-links
 mkdocs-click
 mkdocs-redirects
+mkdocs-autorefs
