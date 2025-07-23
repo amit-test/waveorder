@@ -3,3 +3,4 @@ markdown
 pymdown-extensions
 markdown-callouts
 mdx-gh-links
+mkdocs-click
