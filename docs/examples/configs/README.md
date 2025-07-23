@@ -53,7 +53,8 @@ Try modifying the configuration file to see how the regularization parameter cha
 
     3D brightfield data use `phase.yml`.
 
-    Multi-modal data, start by reconstructing the individual modaliities, each with a single config file and CLI call. Then combine the reconstructions by TODO: @Ziwen do can you help me append to the zarrs to help me fix this?
+    Multi-modal data, start by reconstructing the individual modaliities, each with a single config file and CLI call.
+    Then combine the reconstructions by TODO: @Ziwen do can you help me append to the zarrs to help me fix this?
 
 2. **Q: Should I use `reconstruction_dimension` = 2 or 3?**
 
