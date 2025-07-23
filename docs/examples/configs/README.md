@@ -47,15 +47,15 @@ Try modifying the configuration file to see how the regularization parameter cha
 
     If you are acquiring:
 
-    **3D data with calibrated liquid-crystal polarizers via `waveorder`** use `birefringence.yml`.
+    3D data with calibrated liquid-crystal polarizers via `waveorder` use `birefringence.yml`.
 
-    **3D fluorescence data** use `fluorescence.yml`.
+    3D fluorescence data use `fluorescence.yml`.
 
-    **3D brightfield data** use `phase.yml`.
+    3D brightfield data use `phase.yml`.
 
-    **Multi-modal data**, start by reconstructing the individual modaliities, each with a single config file and CLI call. Then combine the reconstructions by ***TODO: @Ziwen do can you help me append to the zarrs to help me fix this? ***
+    Multi-modal data, start by reconstructing the individual modaliities, each with a single config file and CLI call. Then combine the reconstructions by TODO: @Ziwen do can you help me append to the zarrs to help me fix this?
 
-2. **Q: Should I use `reconstruction_dimension` = 2 or 3?
+2. **Q: Should I use `reconstruction_dimension` = 2 or 3?**
 
     If your downstream processing requires 3D information or if you're unsure, then you should use `reconstruction_dimension = 3`. If your sample is very thin compared to the depth of field of the microscope, if you're in a noise-limited regime, or if your downstream processing requires 2D information, then you should use `reconstruction_dimension = 2`. Empirically, we have found that 2D reconstructions reduce the noise in our reconstructions because it uses 3D information to make a single  estimate for each pixel.
 
