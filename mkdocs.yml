@@ -58,7 +58,7 @@ plugins:
   - search
   - gen-files:
       scripts:
-        - waveorder/waveorder/docs/examples/gen_ref_pages.py
+        - waveorder/docs/examples/gen_ref_pages.py
   - redirects:
       redirect_maps:
         user-guide/plugins.md: docs/README.md
