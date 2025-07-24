@@ -66,9 +66,9 @@ plugins:
         user-guide/custom-themes.md: docs/README.md
         user-guide/styling-your-docs.md: docs/README.md
   - autorefs
-  # - literate-nav:
-      # nav_file: README.md
-      # implicit_index: true
+  - literate-nav:
+      nav_file: README.md
+      implicit_index: true
   # - mkdocs-autoapi:
       # autoapi_add_nav_entry: Reference
       # autoapi_ignore:
@@ -82,7 +82,7 @@ plugins:
             show_root_heading: true
             show_source: false
             show_signature_annotations: true
-          paths: [.] # Adjust this to the path of your Python source code
+          paths: [waveorder] # Adjust this to the path of your Python source code
 
 watch:
   - waveorder
