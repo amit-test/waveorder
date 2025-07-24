@@ -19,7 +19,7 @@ theme:
 
 nav:
   - Home: docs/README.md
-  - API: waveorder/autoapi/
+  - API: waveorder/waveorder/docs/autoapi/
   - Getting Started: docs/README.md
   - User Guide: docs/README.md
   - Developer Guide: docs/README.md
@@ -69,7 +69,7 @@ plugins:
       nav_file: README.md
       implicit_index: true
   - mkdocs-autoapi:
-      autoapi_dir: waveorder/docs
+      autoapi_dir: waveorder/waveorder/docs
       autoapi_add_nav_entry: Reference
   - mkdocstrings:
       handlers:
