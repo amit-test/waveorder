@@ -31,7 +31,7 @@ extra_css:
   - css/extra.css
 
 exclude_docs: |
-  *.py
+
 
 markdown_extensions:
   - toc:
