@@ -69,7 +69,7 @@ plugins:
       nav_file: README.md
       implicit_index: true
   - mkdocs-autoapi:
-      autoapi_dir: /docs/autoapi
+      autoapi_dir: /docs
       autoapi_add_nav_entry: Reference
   - mkdocstrings:
       handlers:
