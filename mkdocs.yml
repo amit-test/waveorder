@@ -74,6 +74,7 @@ plugins:
             show_root_heading: true
             show_source: false
             show_signature_annotations: true
+          paths: [waveorder] # Adjust this to the path of your Python source code
 
 watch:
   - waveorder
