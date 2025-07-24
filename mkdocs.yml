@@ -65,10 +65,10 @@ plugins:
         user-guide/plugins.md: docs/README.md
         user-guide/custom-themes.md: docs/README.md
         user-guide/styling-your-docs.md: docs/README.md
-  - autorefs
-  - literate-nav:
-      nav_file: README.md
-      implicit_index: true
+  # - autorefs
+  # - literate-nav:
+      # nav_file: README.md
+      # implicit_index: true
   # - mkdocs-autoapi:
       # autoapi_add_nav_entry: Reference
       # autoapi_ignore:
