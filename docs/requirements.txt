@@ -43,3 +43,4 @@ mkdocs-literate-nav
 mkdocstrings
 mkdocstrings-python
 mkdocs_gen_files
+mkdocs-autoapi
