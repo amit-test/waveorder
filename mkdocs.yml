@@ -19,7 +19,7 @@ theme:
 
 nav:
   - Home: docs/README.md
-  - API: docs/autoapi/
+  # - API: docs/autoapi/
   - Getting Started: docs/README.md
   - User Guide: docs/README.md
   - Developer Guide: docs/README.md
@@ -68,10 +68,10 @@ plugins:
   - literate-nav:
       nav_file: README.md
       implicit_index: true
-  - mkdocs-autoapi:
-      autoapi_add_nav_entry: Reference
-      autoapi_ignore:
-        - "**/gen_ref_pages.py"
+  # - mkdocs-autoapi:
+      # autoapi_add_nav_entry: Reference
+      # autoapi_ignore:
+        # - "**/gen_ref_pages.py"
   - mkdocstrings:
       handlers:
         python:
