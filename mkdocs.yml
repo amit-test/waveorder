@@ -31,7 +31,7 @@ extra_css:
   - css/extra.css
 
 exclude_docs: |
-
+  *.py
 
 markdown_extensions:
   - toc:
@@ -56,6 +56,9 @@ hooks:
 
 plugins:
   - search
+  - gen-files:
+    scripts:
+    - docs/examples/gen_ref_pages.py  # (2)!
   - redirects:
       redirect_maps:
         user-guide/plugins.md: docs/README.md
