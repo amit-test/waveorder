@@ -53,7 +53,6 @@ markdown_extensions:
 copyright: Copyright &copy; 2025.
 
 hooks:
-  - docs/examples/test.py
 
 plugins:
   - search
