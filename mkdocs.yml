@@ -67,6 +67,8 @@ plugins:
   - literate-nav:
       nav_file: README.md
       implicit_index: true
+  - mkdocs-autoapi
+    autoapi_dir: waveorder/waveorder/cli
   - mkdocstrings:
       handlers:
         python:
