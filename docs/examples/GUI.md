@@ -1,3 +1,3 @@
 # GUI
 
-::: waveorder.cli.gui_widget.MainWindow(QWidget)
+::: waveorder.plugin.tab_recon.Ui_ReconTab_Form
