@@ -19,6 +19,7 @@ theme:
 
 nav:
   - Home: docs/README.md
+  - API: waveorder/
   - Getting Started: docs/README.md
   - User Guide: docs/README.md
   - Developer Guide: docs/README.md
@@ -68,7 +69,8 @@ plugins:
       nav_file: README.md
       implicit_index: true
   - mkdocs-autoapi
-    autoapi_dir: waveorder/waveorder/cli
+    autoapi_dir: waveorder
+    autoapi_add_nav_entry: Reference
   - mkdocstrings:
       handlers:
         python:
