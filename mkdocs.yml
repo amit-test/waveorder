@@ -71,6 +71,8 @@ plugins:
   - mkdocs-autoapi:
       autoapi_dir: docs
       autoapi_add_nav_entry: Reference
+      autoapi_ignore:
+        - "**/gen_ref_pages.py"
   - mkdocstrings:
       handlers:
         python:
