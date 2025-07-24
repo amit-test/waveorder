@@ -23,6 +23,7 @@ nav:
   - Getting Started: docs/README.md
   - User Guide: docs/README.md
   - Developer Guide: docs/README.md
+  - Test: docs/examples/test.md
   - About:
     - Release Notes: docs/README.md
     - Contributing: docs/README.md
