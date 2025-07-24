@@ -42,3 +42,4 @@ mkdocs-autorefs
 mkdocs-literate-nav
 mkdocstrings
 mkdocstrings-python
+mkdocs_gen_files
