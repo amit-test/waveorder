@@ -1,3 +1,3 @@
 # GUI
 
-::: waveorder.cli.gui_widget.MainWindow
+::: waveorder.cli.gui_widget.MainWindow(QWidget)
