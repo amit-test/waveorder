@@ -5,7 +5,7 @@ from pathlib import Path
 import mkdocs_gen_files
 
 root = Path(__file__).parent.parent
-src = root / "docs/examples/test"  # (1)!
+src = root / "waveorder/scripts"  # (1)!
 
 for path in sorted(src.rglob("*.py")):  # (2)!
     module_path = path.relative_to(src).with_suffix("")  # (3)!
