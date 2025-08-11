@@ -38,6 +38,7 @@ extensions = [
     "myst_parser",
     "numpydoc",
     "sphinx_sitemap",
+    "sphinxcontrib.video",
     "sphinx_gallery.gen_gallery",
 ]
 

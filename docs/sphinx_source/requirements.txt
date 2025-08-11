@@ -47,6 +47,7 @@
 
 # waveorder
 sphinx_copybutton
+sphinxcontrib-video
 myst_parser
 numpydoc
 sphinx_sitemap
