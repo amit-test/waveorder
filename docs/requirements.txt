@@ -52,3 +52,4 @@ numpydoc
 sphinx_sitemap
 sphinx_gallery
 pydata_sphinx_theme
+matplotlib
