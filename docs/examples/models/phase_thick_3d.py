@@ -1,6 +1,6 @@
 """
-3D partially coherent
-====================
+phase thick 3d
+======================
 
 # 3D partially coherent optical diffraction tomography (ODT) simulation
 # J. M. Soto, J. A. Rodrigo, and T. Alieva, "Label-free quantitative

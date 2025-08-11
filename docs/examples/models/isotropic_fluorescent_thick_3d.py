@@ -1,8 +1,8 @@
 """
-isotropic_fluorescent_thick_3d
+Isotropic fluorescent thick 3d
 ===============================
 
-isotropic_fluorescent_thick_3d
+Isotropic fluorescent thick 3d summary
 """
 import napari
 import numpy as np

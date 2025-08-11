@@ -32,21 +32,21 @@ Computation times
    * - Example
      - Time
      - Mem (MB)
-   * - :ref:`sphx_glr_auto_examples_run_coordinate_transform.py` (``..\examples\run_coordinate_transform.py``)
+   * - :ref:`sphx_glr_auto_examples_run_coordinate_transform.py` (``..\examples-iohub\run_coordinate_transform.py``)
      - 00:00.000
      - 0.0
-   * - :ref:`sphx_glr_auto_examples_run_large_array_ome_zarr.py` (``..\examples\run_large_array_ome_zarr.py``)
+   * - :ref:`sphx_glr_auto_examples_run_large_array_ome_zarr.py` (``..\examples-iohub\run_large_array_ome_zarr.py``)
      - 00:00.000
      - 0.0
-   * - :ref:`sphx_glr_auto_examples_run_multi_fov_hcs_ome_zarr.py` (``..\examples\run_multi_fov_hcs_ome_zarr.py``)
+   * - :ref:`sphx_glr_auto_examples_run_multi_fov_hcs_ome_zarr.py` (``..\examples-iohub\run_multi_fov_hcs_ome_zarr.py``)
      - 00:00.000
      - 0.0
-   * - :ref:`sphx_glr_auto_examples_run_single_fov_ome_zarr.py` (``..\examples\run_single_fov_ome_zarr.py``)
+   * - :ref:`sphx_glr_auto_examples_run_single_fov_ome_zarr.py` (``..\examples-iohub\run_single_fov_ome_zarr.py``)
      - 00:00.000
      - 0.0
-   * - :ref:`sphx_glr_auto_examples_run_tiled_ome_zarr.py` (``..\examples\run_tiled_ome_zarr.py``)
+   * - :ref:`sphx_glr_auto_examples_run_tiled_ome_zarr.py` (``..\examples-iohub\run_tiled_ome_zarr.py``)
      - 00:00.000
      - 0.0
-   * - :ref:`sphx_glr_auto_examples_run_view_clearcontrol_dataset.py` (``..\examples\run_view_clearcontrol_dataset.py``)
+   * - :ref:`sphx_glr_auto_examples_run_view_clearcontrol_dataset.py` (``..\examples-iohub\run_view_clearcontrol_dataset.py``)
      - 00:00.000
      - 0.0

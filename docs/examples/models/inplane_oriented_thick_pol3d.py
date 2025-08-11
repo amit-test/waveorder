@@ -1,8 +1,8 @@
 """
-inplane_oriented_thick_pol3d
+In plane oriented thick pol3d
 =============================
 
-inplane_oriented_thick_pol3d
+In plane oriented thick pol3d summary
 """
 import napari
 

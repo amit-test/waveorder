@@ -33,5 +33,6 @@ Write
    getting_started
    iohub_examples/index
    wo_examples/index
+   guide
    api
    contact_us

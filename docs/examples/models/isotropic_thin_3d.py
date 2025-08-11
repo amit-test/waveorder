@@ -1,5 +1,5 @@
 """
-3D partially coherent
+Isotropic thin 3d
 =====================
 
 # 3D partially coherent optical diffraction tomography (ODT) simulation
