@@ -4,7 +4,6 @@ iohub
 N-dimensional bioimaging produces data and metadata in various formats,
 and iohub aims to become a unified Python interface to the most common formats
 used at the Biohub and in the broader imaging community.
-====
 
 Read
 ----
@@ -32,6 +31,7 @@ Write
    :hidden:
 
    getting_started
-   auto_examples/index
+   iohub_examples/index
+   wo_examples/index
    api
    contact_us

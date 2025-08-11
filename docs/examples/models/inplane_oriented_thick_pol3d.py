@@ -1,3 +1,9 @@
+"""
+inplane_oriented_thick_pol3d
+=============================
+
+inplane_oriented_thick_pol3d
+"""
 import napari
 
 from waveorder.models import inplane_oriented_thick_pol3d

@@ -1,3 +1,10 @@
+"""
+inplane_oriented_thick_pol3d_vector
+===================================
+
+inplane_oriented_thick_pol3d_vector
+"""
+
 import napari
 import torch
 

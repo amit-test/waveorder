@@ -213,8 +213,8 @@ numpydoc_show_class_members = False
 
 # sphinx-gallery config
 sphinx_gallery_conf = {
-    "examples_dirs": "../examples-iohub",
-    "gallery_dirs": "auto_examples",
+    "examples_dirs": ["../examples-iohub","../examples/models"],
+    "gallery_dirs": ["iohub_examples", "wo_examples"],
     "download_all_examples": False,
     "filename_pattern": "/run_",
     "min_reported_time": 2,

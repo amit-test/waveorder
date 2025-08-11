@@ -1,3 +1,9 @@
+"""
+isotropic_fluorescent_thick_3d
+===============================
+
+isotropic_fluorescent_thick_3d
+"""
 import napari
 import numpy as np
 
