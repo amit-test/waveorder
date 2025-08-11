@@ -27,20 +27,21 @@
 #torch>=2.4.1
 #qtpy
 
-numpy
-tqdm
-iohub>=0.2,<0.3
+# numpy
+# tqdm
+# iohub>=0.2,<0.3
 
-wget>=3.2
-markdown
-pymdown-extensions
-markdown-callouts
-mdx-gh-links
-mkdocs-click
-mkdocs-redirects
-mkdocs-autorefs
-mkdocs-literate-nav
-mkdocstrings
-mkdocstrings-python
-mkdocs_gen_files
-mkdocs-autoapi
+# wget>=3.2
+# markdown
+# pymdown-extensions
+# markdown-callouts
+# mdx-gh-links
+# mkdocs-click
+# mkdocs-redirects
+# mkdocs-autorefs
+# mkdocs-literate-nav
+# mkdocstrings
+# mkdocstrings-python
+# mkdocs_gen_files
+# mkdocs-autoapi
+
