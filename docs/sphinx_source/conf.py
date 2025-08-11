@@ -7,10 +7,11 @@ import os
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 import sys
 
-import importlib_metadata
-from sphinx_polyversion import load
+import waveorder
+# from sphinx_polyversion.api import load
 
-load(globals())
+# os.environ["POLYVERSION_DATA"] = "C:\\Users\\LabOldenbourg\\Documents\\GitHub\\waveorder\\docs"
+# load(globals())
 # -- General configuration ----------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
@@ -34,15 +35,15 @@ extensions = [
     "sphinx.ext.extlinks",
     "sphinx.ext.viewcode",
     "sphinx_copybutton",
+    "myst_parser",
     "numpydoc",
-    "sphinx_polyversion",
     "sphinx_sitemap",
     "sphinx_gallery.gen_gallery",
 ]
 
 # default url is a dummy for local build
 html_baseurl = os.environ.get(
-    "GITHUB_PAGES_URL", f"file://{os.path.dirname(source_dir)}/build/html/"
+    "GITHUB_PAGES_URL", f"/build/html/"
 )
 sitemap_locales = ["en"]
 sitemap_url_scheme = "{link}"
@@ -53,7 +54,7 @@ numpydoc_show_class_members = True
 # templates_path = ["_templates"]
 
 # The suffix of source filenames.
-source_suffix = ".rst"
+source_suffix = ['.rst']
 
 # The encoding of source files.
 # source_encoding = 'utf-8-sig'
@@ -62,11 +63,11 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = "iohub"
-copyright = "2023. Chan Zuckerberg Biohub. All rights reserved"
-release = importlib_metadata.version("iohub")
+project = "waveorder"
+copyright = "2023. Talon Chandler. Chan Zuckerberg Biohub. All rights reserved"
+release = "1.0" # ToDo: get via import
 
-json_url = f"{html_baseurl}/main/_static/switcher.json"
+json_url = f"./_static/switcher.json"
 if "dev" in release or "rc" in release:
     # json_url = "_static/switcher.json"
     version_match = "latest"
@@ -137,7 +138,7 @@ html_theme_options = {
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = "iohub"
+html_title = "waveorder"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 # html_short_title = None
@@ -212,7 +213,7 @@ numpydoc_show_class_members = False
 
 # sphinx-gallery config
 sphinx_gallery_conf = {
-    "examples_dirs": "../examples",
+    "examples_dirs": "../examples-iohub",
     "gallery_dirs": "auto_examples",
     "download_all_examples": False,
     "filename_pattern": "/run_",
