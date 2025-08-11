@@ -63,11 +63,11 @@ Launch Micro-Manager, open `Devices > Hardware Configuration Wizard...`, and add
 ### Option 1 (recommended): Voltage-mode calibration installation
  Create a new channel group and add the `MeadowlarkLC-Voltage (V) LC-A` and `MeadowlarkLC-Voltage (V) LC-B` properties.
 
-![](https://github.com/mehta-lab/recOrder/blob/main/docs/images/create_group_voltage.png)
+<img src="https://raw.githubusercontent.com/mehta-lab/recOrder/refs/heads/main/docs/images/create_group_voltage.png" alt="create_group_voltage">
 
 Add 5 presets to this group named `State0`, `State1`, `State2`, `State3`, and `State4`. You can set random voltages to add these presets, and `waveorder` will calibrate and set these voltages later.
 
-![](https://github.com/mehta-lab/recOrder/blob/main/docs/images/create_preset_voltage.png)
+<img src="https://raw.githubusercontent.com/mehta-lab/recOrder/refs/heads/main/docs/images/create_preset_voltage.png" alt="create_preset_voltage">
 
 ### Option 2 (soon deprecated): retardance mode calibration installation
 

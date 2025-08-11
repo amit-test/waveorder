@@ -5,15 +5,16 @@ Guide
     :maxdepth: 3
 
     guide/README
-    guide/buyers-guide
-    guide/calibration-guide
-    guide/data-schema
-    guide/development-guide
-    guide/microscope-installation-guide
-    guide/napari-plugin-guide
+    guide/docs
     guide/QLIPP
-    guide/reconstruction-guide
-    guide/software-installation-guide
+    guide/data-schema
+    guide/buyers-guide
+    guide/microscope-installation-guide
+    guide/software-installation-guide    
+    guide/napari-plugin-guide
+    guide/calibration-guide
+    guide/reconstruction-guide    
+    guide/development-guide
 
 Index
 -----

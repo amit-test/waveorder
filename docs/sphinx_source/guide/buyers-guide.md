@@ -32,7 +32,7 @@ The components are listed in the order in which they process light. See the buil
 | Liquid crystal adapter | $25-$500 | A 3D printed part that aligns the liquid crystal compensator in a microscope stand's illumination path. Check for your stand among the [OpenPolScope `.stl` files](https://github.com/amitabhverma/Microscope-LC-adapters/tree/main/stl_files) or [contact us](mailto:compmicro@czbiohub.org) for more options.|
 | Circular analyzer (opposite handedness) | $350 | We suggest [a Thorlabs 532 nm, right-hand circular polarizer](https://www.thorlabs.com/thorproduct.cfm?partnumber=CP1R532).|
 
-If you need help selecting or assembling the components, please start an issue on this GitHub repository or contact us at compmicro@czbiohub.org.
+If you need help selecting or assembling the components, please start an issue on this GitHub repository or contact us at mailto:compmicro@czbiohub.org.
 
 ## Quantitative phase and polarization imaging (QLIPP):
 
