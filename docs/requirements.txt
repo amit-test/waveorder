@@ -46,3 +46,8 @@
 # mkdocs-autoapi
 
 # waveorder
+sphinx_copybutton
+myst_parser
+numpydoc
+sphinx_sitemap
+sphinx_gallery
