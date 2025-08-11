@@ -7,7 +7,7 @@ import os
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 import sys
 
-import waveorder
+# import waveorder
 # from sphinx_polyversion.api import load
 
 # os.environ["POLYVERSION_DATA"] = "C:\\Users\\LabOldenbourg\\Documents\\GitHub\\waveorder\\docs"
