@@ -12,7 +12,7 @@ User Guides
     guide/software-installation-guide    
     guide/napari-plugin-guide
     guide/calibration-guide
-    guide/reconstruction-guide    
+    guide/reconstruction-guide
     guide/development-guide
 
 Index

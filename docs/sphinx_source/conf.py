@@ -36,11 +36,30 @@ extensions = [
     "sphinx.ext.viewcode",
     "sphinx_copybutton",
     "numpydoc",
-    "sphinx_mdinclude",
+    "myst_parser",
     "sphinx_sitemap",
     "sphinxcontrib.video",
     "sphinx_gallery.gen_gallery",
 ]
+
+myst_enable_extensions = [
+    "amsmath",
+    "attrs_inline",
+    "colon_fence",
+    "deflist",
+    "dollarmath",
+    "fieldlist",
+    "linkify",
+    "html_admonition",
+    "html_image",
+    "replacements",
+    "smartquotes",
+    "strikethrough",
+    "substitution",
+    "tasklist",
+]
+
+myst_file_suffixes = [".md"]
 
 # default url is a dummy for local build
 html_baseurl = os.environ.get(
@@ -168,7 +187,9 @@ html_favicon = (
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
-
+html_css_files = [
+        'css/custom.css',  # Adjust path if your CSS is in a subdirectory
+    ]
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
 # html_last_updated_fmt = '%b %d, %Y'

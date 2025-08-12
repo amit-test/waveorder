@@ -50,6 +50,7 @@ sphinx_copybutton
 sphinxcontrib-video
 myst_parser
 sphinx_mdinclude
+linkify-it-py
 numpydoc
 sphinx_sitemap
 sphinx_gallery
