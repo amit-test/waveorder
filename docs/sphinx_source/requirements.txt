@@ -45,7 +45,7 @@
 # mkdocs_gen_files
 # mkdocs-autoapi
 
-# waveorder
+waveorder
 sphinx_copybutton
 sphinxcontrib-video
 myst_parser
