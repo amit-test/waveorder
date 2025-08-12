@@ -35,8 +35,8 @@ extensions = [
     "sphinx.ext.extlinks",
     "sphinx.ext.viewcode",
     "sphinx_copybutton",
-    "myst_parser",
     "numpydoc",
+    "sphinx_mdinclude",
     "sphinx_sitemap",
     "sphinxcontrib.video",
     "sphinx_gallery.gen_gallery",
@@ -55,7 +55,10 @@ numpydoc_show_class_members = True
 # templates_path = ["_templates"]
 
 # The suffix of source filenames.
-source_suffix = ['.rst']
+source_suffix = {
+        '.rst': 'restructuredtext',
+        '.yml': 'yaml',
+    }
 
 # The encoding of source files.
 # source_encoding = 'utf-8-sig'
@@ -164,7 +167,7 @@ html_favicon = (
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ["_static","images"]
+html_static_path = ["_static"]
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
@@ -214,8 +217,8 @@ numpydoc_show_class_members = False
 
 # sphinx-gallery config
 sphinx_gallery_conf = {
-    "examples_dirs": ["../examples-iohub","../examples/models"],
-    "gallery_dirs": ["iohub_examples", "wo_examples"],
+    "examples_dirs": ["../examples","../examples/maintenance/PTI_simulation","../examples/maintenance/QLIPP_simulation"],
+    "gallery_dirs": ["wo_examples","wo_examples/maintenance/PTI_simulation","wo_examples/maintenance/QLIPP_simulation"],
     "download_all_examples": False,
     "filename_pattern": "/run_",
     "min_reported_time": 2,

@@ -1,10 +1,9 @@
-Guide
-=====
+User Guides
+===========
 
 .. toctree::
     :maxdepth: 3
 
-    guide/README
     guide/docs
     guide/QLIPP
     guide/data-schema

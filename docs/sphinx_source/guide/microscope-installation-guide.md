@@ -1,6 +1,7 @@
 # Microscope Installation Guide
 
 This guide will walk through a complete waveorder installation consisting of:
+
 1. Checking pre-requisites for compatibility.
 2. Installing Meadowlark DS5020 and liquid crystals.
 3. Installing and launching the latest stable version of `waveorder` via `pip`.
@@ -8,6 +9,7 @@ This guide will walk through a complete waveorder installation consisting of:
 5. Connecting `waveorder` to Micro-Manager via a `pycromanager` connection.
 
 ## Compatibility Summary
+
 Before you start you will need to confirm that your system is compatible with the following software:
 
 | Software | Version |
@@ -26,6 +28,7 @@ Start by installing the Meadowlark DS5020 and liquid crystals using the software
 **Check your installation versions** by opening CellDrive5000 and double clicking the Meadowlark Optics logo. Confirm that **"PC software version = 1.08" and "Controller firmware version >= 1.04".**
 
 If you need to change your PC software version, follow these steps:
+
 - From "Add and remove programs", remove CellDrive5000 and "National Instruments Software".
 - From "Device manager", open the "Meadowlark Optics" group, right click `mlousb`, click "Uninstall device", check "Delete the driver software for this device", and click "Uninstall". Uninstall `Meadowlark Optics D5020 LC Driver` following the same steps.
 - Using the USB stick provided by Meadowlark, reinstall the USB drivers and CellDrive5000.
@@ -61,6 +64,7 @@ Launch Micro-Manager, open `Devices > Hardware Configuration Wizard...`, and add
 **Upgrading users:** you will need to reinstall the Meadowlark device to your Micro-Manager configuration file, because the device driver's name has changed to from `MeadowlarkLcOpenSource` to `MeadowlarkLC`.
 
 ### Option 1 (recommended): Voltage-mode calibration installation
+
  Create a new channel group and add the `MeadowlarkLC-Voltage (V) LC-A` and `MeadowlarkLC-Voltage (V) LC-B` properties.
 
 <img src="https://raw.githubusercontent.com/mehta-lab/recOrder/refs/heads/main/docs/images/create_group_voltage.png" alt="create_group_voltage">

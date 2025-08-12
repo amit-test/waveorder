@@ -49,6 +49,7 @@
 sphinx_copybutton
 sphinxcontrib-video
 myst_parser
+sphinx_mdinclude
 numpydoc
 sphinx_sitemap
 sphinx_gallery

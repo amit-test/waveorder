@@ -1,3 +1,6 @@
+Configs
+========
+
 # `waveorder` CLI examples
 
 `waveorder` uses a configuration-file-based command-line inferface (CLI) to
@@ -8,6 +11,7 @@ This page demonstrates `waveorder`'s CLI.
 ## Getting started
 
 ### 1. Check your installation
+
 First, [install `waveorder`](../docs/software-installation-guide.md) and run
 ```bash
 waveorder
@@ -18,6 +22,7 @@ waveorder: Computational Toolkit for Label-Free Imaging
 ```
 
 ### 2. Download and convert a test dataset
+
 Next, [download the test data from zenodo (47 MB)](https://zenodo.org/record/6983916/files/recOrder_test_data.zip?download=1), and convert a dataset to the latest version of `.zarr` with
 ```
 cd /path/to/
@@ -31,6 +36,7 @@ napari ./dataset.zarr --plugin waveorder
 ```
 
 ### 3. Run a reconstruction
+
 Run an example reconstruction with
 ```
 waveorder reconstruct ./dataset.zarr/0/0/0 -c /path/to/waveorder/examples/settings/birefringence-and-phase.yml -o ./reconstruction.zarr
@@ -43,6 +49,7 @@ napari ./reconstruction.zarr --plugin waveorder
 Try modifying the configuration file to see how the regularization parameter changes the results.
 
 ## FAQ
+
 ### 1. Q: Which configuration file should I use?
 
 If you are acquiring:
