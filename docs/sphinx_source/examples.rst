@@ -10,3 +10,4 @@ Examples
 
    wo_examples/models/index
    wo_examples/visuals/index
+   sg_execution_times

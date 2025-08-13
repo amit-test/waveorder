@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**00:00.000** total execution time for 6 files **from all galleries**:
+**00:00.000** total execution time for 8 files **from all galleries**:
 
 .. container::
 
@@ -32,21 +32,27 @@ Computation times
    * - Example
      - Time
      - Mem (MB)
-   * - :ref:`sphx_glr_auto_examples_run_coordinate_transform.py` (``..\examples-iohub\run_coordinate_transform.py``)
+   * - :ref:`sphx_glr_wo_examples_models_inplane_oriented_thick_pol3d.py` (``..\examples\models\inplane_oriented_thick_pol3d.py``)
      - 00:00.000
      - 0.0
-   * - :ref:`sphx_glr_auto_examples_run_large_array_ome_zarr.py` (``..\examples-iohub\run_large_array_ome_zarr.py``)
+   * - :ref:`sphx_glr_wo_examples_models_inplane_oriented_thick_pol3d_vector.py` (``..\examples\models\inplane_oriented_thick_pol3d_vector.py``)
      - 00:00.000
      - 0.0
-   * - :ref:`sphx_glr_auto_examples_run_multi_fov_hcs_ome_zarr.py` (``..\examples-iohub\run_multi_fov_hcs_ome_zarr.py``)
+   * - :ref:`sphx_glr_wo_examples_models_isotropic_fluorescent_thick_3d.py` (``..\examples\models\isotropic_fluorescent_thick_3d.py``)
      - 00:00.000
      - 0.0
-   * - :ref:`sphx_glr_auto_examples_run_single_fov_ome_zarr.py` (``..\examples-iohub\run_single_fov_ome_zarr.py``)
+   * - :ref:`sphx_glr_wo_examples_models_isotropic_thin_3d.py` (``..\examples\models\isotropic_thin_3d.py``)
      - 00:00.000
      - 0.0
-   * - :ref:`sphx_glr_auto_examples_run_tiled_ome_zarr.py` (``..\examples-iohub\run_tiled_ome_zarr.py``)
+   * - :ref:`sphx_glr_wo_examples_models_phase_thick_3d.py` (``..\examples\models\phase_thick_3d.py``)
      - 00:00.000
      - 0.0
-   * - :ref:`sphx_glr_auto_examples_run_view_clearcontrol_dataset.py` (``..\examples-iohub\run_view_clearcontrol_dataset.py``)
+   * - :ref:`sphx_glr_wo_examples_models_stokes.py` (``..\examples\models\stokes.py``)
+     - 00:00.000
+     - 0.0
+   * - :ref:`sphx_glr_wo_examples_visuals_plot_greens_tensor.py` (``..\examples\visuals\plot_greens_tensor.py``)
+     - 00:00.000
+     - 0.0
+   * - :ref:`sphx_glr_wo_examples_visuals_plot_vector_transfer_function_support.py` (``..\examples\visuals\plot_vector_transfer_function_support.py``)
      - 00:00.000
      - 0.0
