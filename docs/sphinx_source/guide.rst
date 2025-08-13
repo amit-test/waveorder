@@ -4,7 +4,7 @@ User Guides
 .. toctree::
     :maxdepth: 3
 
-    guide/docs
+    guide/README
     guide/QLIPP
     guide/data-schema
     guide/buyers-guide
