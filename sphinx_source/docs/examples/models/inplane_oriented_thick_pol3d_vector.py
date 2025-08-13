@@ -1,3 +1,9 @@
+"""
+In plane oriented thick pol3d vector
+===================================
+In plane oriented thick pol3d vector summary
+"""
+
 import napari
 import torch
 

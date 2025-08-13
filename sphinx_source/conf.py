@@ -56,7 +56,7 @@ myst_enable_extensions = [
     "tasklist",
 ]
 
-myst_file_suffixes = [".md"]
+myst_file_suffixes = []
 
 # default url is a dummy for local build
 html_baseurl = os.environ.get(
@@ -73,7 +73,6 @@ numpydoc_show_class_members = True
 # The suffix of source filenames.
 source_suffix = {
         '.rst': 'restructuredtext',
-        '.yml': 'yaml',
     }
 
 # The encoding of source files.
@@ -230,7 +229,7 @@ numpydoc_show_class_members = False
 
 # sphinx-gallery config
 sphinx_gallery_conf = {
-    "examples_dirs": ["../examples"],
+    "examples_dirs": ["docs/examples"],
     "gallery_dirs": ["wo_examples"],
     "download_all_examples": False,
     "filename_pattern": "/run_",

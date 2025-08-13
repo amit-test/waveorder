@@ -1,3 +1,8 @@
+"""
+Isotropic thin 3d
+===================================
+Isotropic thin 3d summary
+"""
 # 3D partially coherent optical diffraction tomography (ODT) simulation
 # J. M. Soto, J. A. Rodrigo, and T. Alieva, "Label-free quantitative
 # 3D tomographic imaging for partially coherent light microscopy," Opt. Express
