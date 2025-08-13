@@ -7,11 +7,8 @@ import os
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 import sys
 
-# import waveorder
-# from sphinx_polyversion.api import load
+import importlib_metadata
 
-# os.environ["POLYVERSION_DATA"] = "C:\\Users\\LabOldenbourg\\Documents\\GitHub\\waveorder\\docs"
-# load(globals())
 # -- General configuration ----------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
@@ -88,7 +85,7 @@ master_doc = "index"
 # General information about the project.
 project = "waveorder"
 copyright = "2023. Talon Chandler. Chan Zuckerberg Biohub. All rights reserved"
-release = "1.0" # ToDo: get via import
+release = importlib_metadata.version("waveorder")
 
 json_url = f"./_static/switcher.json"
 if "dev" in release or "rc" in release:
@@ -148,7 +145,7 @@ html_theme_options = {
     "icon_links": [
         {
             "name": "GitHub",
-            "url": "https://github.com/amit-test/waveorder",
+            "url": "https://github.com/mehta-lab/waveorder",
             "icon": "fa-brands fa-square-github",
             "type": "fontawesome",
         }
@@ -176,12 +173,7 @@ html_title = "waveorder"
 # pixels large.
 # emoji favicon code adapted from:
 # https://twitter.com/LeaVerou/status/1241619866475474946
-html_favicon = (
-    "data:image/svg+xml,"
-    "<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>"
-    r"<text y=%22.9em%22 font-size=%2290%22>💾</text>"
-    "</svg>"
-)
+html_favicon = '_static/waveorder.ico'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -238,8 +230,8 @@ numpydoc_show_class_members = False
 
 # sphinx-gallery config
 sphinx_gallery_conf = {
-    "examples_dirs": ["../examples","../examples/maintenance/PTI_simulation","../examples/maintenance/QLIPP_simulation"],
-    "gallery_dirs": ["wo_examples","wo_examples/maintenance/PTI_simulation","wo_examples/maintenance/QLIPP_simulation"],
+    "examples_dirs": ["../examples"],
+    "gallery_dirs": ["wo_examples"],
     "download_all_examples": False,
     "filename_pattern": "/run_",
     "min_reported_time": 2,

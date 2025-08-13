@@ -5,14 +5,7 @@ API Reference
     :maxdepth: 3
 
     api/settings
-    api/ngff
-    api/mm_reader
-    api/mm_sequence_reader
-    api/mm_ometiff_reader
-    api/ndtiff
-    api/clearcontrol
-    api/upti
-    api/mm_converter
+    api/stokes
 
 Index
 -----

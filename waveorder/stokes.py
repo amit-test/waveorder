@@ -149,10 +149,10 @@ def stokes_after_adr(
     orientation, transmittance, and depolarization.
 
     Note: all four parameters can be torch.Tensor, but they must be the same size.
-    If your parameters are in a tensor with shape = (4, ...), use
+    If your parameters are in a tensor with shape = (4, ...), use 
     the * operator to expand over the first dimension.
 
-    e.g. stokes_after_adr(*array) is identical to
+    e.g. stokes_after_adr(*array) is identical to 
     stokes_after_adr(array[0], array[1], array[2], array[3]).
 
     Parameters
@@ -275,7 +275,7 @@ def estimate_adr_from_stokes(s0, s1, s2, s3, input="cpl"):
         Input polarization state
 
     Returns
-    ----------
+    -------
     retardance, orientation, transmittance, depolarization: torch.Tensor
         retardance: retardance of adr, 2*pi periodic
         orientation: slow-axis orientation of adr, 2*pi periodic
@@ -310,7 +310,7 @@ def estimate_ar_from_stokes012(s0, s1, s2, input="cpl"):
         First three Stokes parameters
 
     Returns
-    ----------
+    -------
     retardance, orientation, transmittance: torch.Tensor, identical shapes
         retardance: retardance of ar, 2*pi periodic
         orientation: slow-axis orientation of ar, 2*pi periodic

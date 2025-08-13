@@ -19,7 +19,6 @@ __pycache__/
 .Python
 build/
 docs/build/
-docs/sphinx_source/iohub_examples/
 docs/sphinx_source/wo_examples/
 develop-eggs/
 dist/
