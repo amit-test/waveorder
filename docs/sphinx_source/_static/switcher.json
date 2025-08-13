@@ -1,14 +1,14 @@
 [
     {
         "version": "latest",
-        "url": "/waveorder/main/index.html"
+        "url": "/en/latest/index.html"
     },
     {
         "version": "v3.0.0a0",
-        "url": "/waveorder/v3.0.0a0/index.html"
+        "url": "/en/v3.0.0a0/index.html"
     },
     {
         "version": "v2.2.1",
-        "url": "/waveorder/v2.2.1/index.html"
+        "url": "/en/v2.2.1/index.html"
     }
 ]
