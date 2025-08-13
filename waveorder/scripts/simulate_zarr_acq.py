@@ -8,6 +8,7 @@ from pathlib import Path
 from iohub.convert import TIFFConverter
 from iohub.ngff import open_ome_zarr
 
+from waveorder.cli import jobs_mgmt
 from waveorder.cli.utils import create_empty_hcs_zarr
 
 # This script is a demo .zarr acquisition simulation from an acquired .zarr store
@@ -149,6 +150,7 @@ def do_reconstruct(input_path, time_point):
     output_path = os.path.join(
         Path(input_path).parent.absolute(), "Recon_" + Path(input_path).name
     )
+    mainfp = str(jobs_mgmt.FILE_PATH)
 
     print(
         "Processing {input} time_point={tp}".format(
@@ -159,7 +161,8 @@ def do_reconstruct(input_path, time_point):
     try:
         proc = subprocess.run(
             [
-                "waveorder",
+                "python",
+                mainfp,
                 "reconstruct",
                 "-i",
                 input_path,
@@ -167,8 +170,8 @@ def do_reconstruct(input_path, time_point):
                 config_path,
                 "-o",
                 output_path,
-                "-uid",
-                "test",
+                "-rx",
+                str(20),
             ]
         )
         if proc.returncode != 0:

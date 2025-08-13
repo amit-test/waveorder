@@ -13,7 +13,7 @@ except:
     pass
 
 try:
-    import qdarktheme  # pip install pyqtdarktheme==2.1.0 --ignore-requires-python
+    import qdarktheme
 except:
     pass
 
@@ -31,8 +31,7 @@ def gui():
     )  # Other options: "Fusion", "Windows", "macOS", "WindowsVista"
     try:
         qdarktheme.setup_theme("dark")
-    except Exception as e:
-        print(e.args)
+    except:
         pass
     window = MainWindow()
     window.setWindowTitle(PLUGIN_ICON + " " + PLUGIN_NAME + " " + PLUGIN_ICON)
