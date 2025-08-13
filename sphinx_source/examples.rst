@@ -1,7 +1,7 @@
 Examples
 ========
 
- .. include:: ../examples/README.md
+ .. include:: ./docs/examples/README.md
    :parser: myst_parser.sphinx_
 
 .. toctree::

@@ -12,7 +12,7 @@ This page demonstrates `waveorder`'s CLI.
 
 ### 1. Check your installation
 
-First, [install `waveorder`](../docs/software-installation-guide.md) and run
+First, [install `waveorder`](../../software-installation-guide.md) and run
 ```bash
 waveorder
 ```

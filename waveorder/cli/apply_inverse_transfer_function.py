@@ -9,7 +9,7 @@ import torch
 import torch.multiprocessing as mp
 from iohub import open_ome_zarr
 
-from waveorder.cli import apply_inverse_models, jobs_mgmt
+from waveorder.cli import apply_inverse_models
 from waveorder.cli.parsing import (
     config_filepath,
     input_position_dirpaths,
@@ -24,8 +24,6 @@ from waveorder.cli.utils import (
     create_empty_hcs_zarr,
 )
 from waveorder.io import utils
-
-JM = jobs_mgmt.JobsManagement()
 
 
 def _check_background_consistency(

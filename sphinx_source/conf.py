@@ -21,7 +21,7 @@ import importlib_metadata
 sys.path.insert(0, os.path.abspath("../../"))
 
 source_dir = os.path.dirname(__file__)
-sys.path.insert(0, os.path.join(source_dir, "ext"))
+sys.path.insert(0, os.path.join(source_dir, "docs"))
 
 extensions = [
     "sphinx.ext.autodoc",
@@ -73,7 +73,6 @@ numpydoc_show_class_members = True
 # The suffix of source filenames.
 source_suffix = {
         '.rst': 'restructuredtext',
-        '.yml': 'yaml',
     }
 
 # The encoding of source files.
@@ -230,7 +229,7 @@ numpydoc_show_class_members = False
 
 # sphinx-gallery config
 sphinx_gallery_conf = {
-    "examples_dirs": ["../examples"],
+    "examples_dirs": ["docs/examples"],
     "gallery_dirs": ["wo_examples"],
     "download_all_examples": False,
     "filename_pattern": "/run_",
