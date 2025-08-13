@@ -56,7 +56,7 @@ myst_enable_extensions = [
     "tasklist",
 ]
 
-myst_file_suffixes = [".md"]
+myst_file_suffixes = []
 
 # default url is a dummy for local build
 html_baseurl = os.environ.get(
