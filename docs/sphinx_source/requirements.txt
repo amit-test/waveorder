@@ -45,6 +45,7 @@
 # mkdocs_gen_files
 # mkdocs-autoapi
 
+pydantic
 waveorder
 sphinx_copybutton
 sphinxcontrib-video
