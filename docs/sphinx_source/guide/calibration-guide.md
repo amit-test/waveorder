@@ -1,3 +1,5 @@
+# Calibration Guide
+
 This guide describes `waveorder`'s calibration routine with details about its goals, parameters, and evaluation metrics.
 
 ## Why calibrate?
