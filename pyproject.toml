@@ -79,7 +79,6 @@ dev = [
   "tox",
 ]
 docs = [
-  "pydantic",
   "sphinx_copybutton",
   "sphinxcontrib-video",
   "myst_parser",
