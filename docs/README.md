@@ -6,7 +6,7 @@ We have organized our documentation by user type and intended task.
 
 **Reconstruct existing data:** start with the [reconstruction guide](guide/reconstruction-guide.md) and consult the [data schema](guide/data-schema.md) for `waveorder`'s data format.
 
-**Reconstruct with a GUI:** start with the [plugin's reconstruction guide](guide/napari-plugin-guide.md#acquisition--reconstruction-tab).
+**Reconstruct with a GUI:** start with the [plugin's reconstruction guide](guide/napari-plugin-guide.md#acquisition-reconstruction-tab).
 
 
 **Integrate `waveorder` into my software:** start with [`examples/`](examples/)
