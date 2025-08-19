@@ -19,7 +19,7 @@ __pycache__/
 .Python
 build/
 docs/build/
-docs/sphinx_source/wo_examples/
+docs/wo_examples/
 develop-eggs/
 dist/
 downloads/
