@@ -42,6 +42,14 @@ def download_video(src_url, filename):
 
 if __name__ == "__main__":
     output_dir = os.environ.get("READTHEDOCS_OUTPUT", "_build/html")
+    try:
+        full_videos_path = os.path.join(output_dir, "html/_static/videos/")
+        # Create the directory and any missing parent directories
+        os.makedirs(full_videos_path, exist_ok=True)
+        print(f"Directory '{full_videos_path}' created successfully.")
+    except OSError as e:
+        print(f"Error creating directory: {e}")
+
     for root, _, files in os.walk(output_dir):
         for file in files:
             if file.endswith(".html"):
