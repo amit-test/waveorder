@@ -238,11 +238,13 @@ sphinx_gallery_conf = {
     "write_computation_times": False,
 }
 
+
 def setup(app):
     app.connect("source-read", transform_md_links)
+
 
 def transform_md_links(app, docname, source):
     content = source[0]
     # Transform .md links to .html for Sphinx build
-    content = re.sub(r"\]\(([^)#]+?)\.md(#[^)]+)?\)", r"](\1.html\2)", content)    
+    content = re.sub(r"\]\(([^)#]+?)\.md(#[^)]+)?\)", r"](\1.html\2)", content)
     source[0] = content
