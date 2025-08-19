@@ -5,7 +5,7 @@ def fix_markdown_links(html_file):
     with open(html_file, 'r+') as f:
         content = f.read()
         # Example: Replace relative paths that point to .md with .html
-        content = re.sub(r'href="(.*?)\.md"', r'href="\1.html"', content)
+        content = re.sub(r"\]\(([^)#]+?)\.md(#[^)]+)?\)", r"](\1.html\2)", content)
         f.seek(0)
         f.write(content)
         f.truncate()
