@@ -32,22 +32,23 @@ def fix_markdown_links(html_file):
         f.truncate()
 
 # <a class="github reference external" href="https://github.com/user-attachments/assets/a0a8bffb-bf81-4401-9ace-3b4955436b57">user-attachments/assets</a>
-def replace_github_videos(source: str):
+def replace_github_videos(content: str):
     pre_src = '<a class="github reference external" href="'
     post_src = '">user-attachments/assets</a>'
     pre_fin = '<video src="https://waveorder.readthedocs.io/en/latest/_static/videos/'
     post_fin = '" controls autoplay></video>'
     for replacements in ultimate_replacements:
         src_txt = pre_src + replacements[0] + post_src
-        fin_txt = pre_fin + replacements[1] + post_fin
-        content = source.replace(
-            src_txt, fin_txt
-        )
-        print("Replacing {src_txt} with {fin_txt}")
-        if not replacements[2]:
-            success = download_video(replacements[0], replacements[1])
-            if success:
-                replacements[2] = True
+        if src_txt in content:
+            fin_txt = pre_fin + replacements[1] + post_fin
+            content = content.replace(
+                src_txt, fin_txt
+            )
+            print(f"Replacing '{src_txt}' with '{fin_txt}'")
+            if not replacements[2]:
+                success = download_video(replacements[0], replacements[1])
+                if success:
+                    replacements[2] = True
     return content
 
 
