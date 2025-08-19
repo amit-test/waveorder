@@ -22,7 +22,7 @@ Buyers have two options:
 
 The components are listed in the order in which they process light. See the build video here to see how to assemble these components on your microscope.
 
-<video src="https://openpolscope.org/test/parts.mp4" width="640" controls autoplay></video>
+<video src="https://openpolscope.org/test/parts.mp4" controls autoplay></video>
 
 | Part                     | Approximate Price | Notes                       |
 |--------------------------|-------------------|-----------------------------|
