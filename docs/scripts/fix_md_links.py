@@ -3,7 +3,7 @@ import re
 import requests
 
 ultimate_replacements = [
-        ["https://github.com/user-attachments/assets/a0a8bffb-bf81-4401-9ace-3b4955436b57", "<video src=\"_static/videos/parts.mp4\" controls autoplay></video>", "parts.mp4", False],
+        ["https://github.com/user-attachments/assets/a0a8bffb-bf81-4401-9ace-3b4955436b57", "parts.mp4", False],
     ]
 
 def fix_markdown_links(html_file):
@@ -20,14 +20,16 @@ def fix_markdown_links(html_file):
         f.truncate()
 
 def replace_github_videos(source:str):
-    pre = "<a class=\"github reference external\" href=\""
-    post = "\">user-attachments/assets</a>"
+    pre_src = "<a class=\"github reference external\" href=\""
+    post_src = "\">user-attachments/assets</a>"
+    pre_fin = "<video src=\"../_static/videos/"
+    post_fin = "\" controls autoplay></video>"
     for replacements in ultimate_replacements:
-        content = source.replace(pre+replacements[0]+post, replacements[1])
-        if not replacements[3]:
-            success = download_video(replacements[0], replacements[2])
+        content = source.replace(pre_src+replacements[0]+post_src, pre_fin+replacements[1]+post_fin)
+        if not replacements[2]:
+            success = download_video(replacements[0], replacements[1])
             if success:
-                replacements[3] = True
+                replacements[2] = True
     return content
 
 def download_video(src_url, filename):    
