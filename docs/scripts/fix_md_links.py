@@ -3,7 +3,9 @@ import re
 import requests
 
 ultimate_replacements = [
-        ["https://github.com/user-attachments/assets/a0a8bffb-bf81-4401-9ace-3b4955436b57", "parts.mp4", False],
+        # Github video link, filename on RTD, download once boolean
+        ["https://github.com/user-attachments/assets/a0a8bffb-bf81-4401-9ace-3b4955436b57", "waveorder-overview.mp4", False],
+        ["https://github.com/user-attachments/assets/4f9969e5-94ce-4e08-9f30-68314a905db6", "figure-slideshow.mp4", False],
     ]
 
 def fix_markdown_links(html_file):
@@ -22,7 +24,7 @@ def fix_markdown_links(html_file):
 def replace_github_videos(source:str):
     pre_src = "<a class=\"github reference external\" href=\""
     post_src = "\">user-attachments/assets</a>"
-    pre_fin = "<video src=\"../_static/videos/"
+    pre_fin = "<video src=\"https://waveorder.readthedocs.io/en/latest/_static/videos/"
     post_fin = "\" controls autoplay></video>"
     for replacements in ultimate_replacements:
         content = source.replace(pre_src+replacements[0]+post_src, pre_fin+replacements[1]+post_fin)
