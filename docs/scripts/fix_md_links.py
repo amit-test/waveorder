@@ -3,7 +3,7 @@ import re
 import requests
 
 ultimate_replacements = [
-        ["https://github.com/user-attachments/assets/a0a8bffb-bf81-4401-9ace-3b4955436b57", "<video src=\"_static/videos/parts.mp4\" controls autoplay></video>", "parts.mp4"],
+        ["https://github.com/user-attachments/assets/a0a8bffb-bf81-4401-9ace-3b4955436b57", "<video src=\"_static/videos/parts.mp4\" controls autoplay></video>", "parts.mp4", False],
     ]
 
 def fix_markdown_links(html_file):
@@ -24,16 +24,21 @@ def replace_github_videos(source:str):
     post = "\">user-attachments/assets</a>"
     for replacements in ultimate_replacements:
         content = source.replace(pre+replacements[0]+post, replacements[1])
-        download_video(replacements[0], replacements[2])
+        if not replacements[3]:
+            success = download_video(replacements[0], replacements[2])
+            if success:
+                replacements[3] = True
     return content
 
 def download_video(src_url, filename):    
     output_dir = os.environ.get("READTHEDOCS_OUTPUT", "_build/html")
-    print(src_url)
-    print(output_dir)
     resp = requests.get(src_url) # making requests to server
-    with open(os.path.join(output_dir, "_static/videos", filename), "wb") as f: # opening a file handler to create new file 
+    full_mp4_path = os.path.join(output_dir, "html/_static/videos", filename)
+    with open(full_mp4_path, "wb") as f: # opening a file handler to create new file 
         f.write(resp.content) # writing content to file
+        print("File {src} downloaded to {dl}".format(src=src_url, dl=full_mp4_path))
+        return True
+    return False
 
 if __name__ == "__main__":
     output_dir = os.environ.get("READTHEDOCS_OUTPUT", "_build/html")
