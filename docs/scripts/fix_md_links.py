@@ -28,11 +28,11 @@ def replace_github_videos(source:str):
     return content
 
 def download_video(src_url, filename):    
-    output_dir = os.environ.get("READTHEDOCS_OUTPUT", "_build/html/_static/videos/")
+    output_dir = os.environ.get("READTHEDOCS_OUTPUT", "_build/html")
     print(src_url)
     print(output_dir)
     resp = requests.get(src_url) # making requests to server
-    with open(os.path.join(output_dir,filename), "wb") as f: # opening a file handler to create new file 
+    with open(os.path.join(output_dir, "_static/videos", filename), "wb") as f: # opening a file handler to create new file 
         f.write(resp.content) # writing content to file
 
 if __name__ == "__main__":
