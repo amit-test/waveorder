@@ -4,5 +4,5 @@ blockquote {
 }
 
 video {
-    object-fit: fill;
+    width: -webkit-fill-available;
 }
