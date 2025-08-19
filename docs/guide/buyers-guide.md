@@ -23,7 +23,7 @@ Buyers have two options:
 The components are listed in the order in which they process light. See the build video here to see how to assemble these components on your microscope.
 
 <video>
-   <source src="https://github.com/user-attachments/assets/a0a8bffb-bf81-4401-9ace-3b4955436b57" type="video/mp4">
+   <source src="https://private-user-images.githubusercontent.com/9554101/396644110-a0a8bffb-bf81-4401-9ace-3b4955436b57.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTU1ODU5NTAsIm5iZiI6MTc1NTU4NTY1MCwicGF0aCI6Ii85NTU0MTAxLzM5NjY0NDExMC1hMGE4YmZmYi1iZjgxLTQ0MDEtOWFjZS0zYjQ5NTU0MzZiNTcubXA0P1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDgxOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTA4MTlUMDY0MDUwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OTlkMjYyZWEzMjBiZjEwMmQzY2M4NWUwNWY4YzMyMjgzZGY1NTEzMzgyNzM0OTE4YzVmMmY5M2RjN2RkYjkwOCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.TYmgf_r3SpxD9dpyPcYEL_E_nezFkJWFmZAFVeh9WCg" type="video/mp4">
 </video>
 
 | Part                     | Approximate Price | Notes                       |
