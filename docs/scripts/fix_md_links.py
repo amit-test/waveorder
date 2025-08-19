@@ -31,6 +31,7 @@ def fix_markdown_links(html_file):
         f.write(content)
         f.truncate()
 
+
 # <a class="github reference external" href="https://github.com/user-attachments/assets/a0a8bffb-bf81-4401-9ace-3b4955436b57">user-attachments/assets</a>
 def replace_github_videos(content: str):
     pre_src = '<a class="github reference external" href="'
@@ -41,9 +42,7 @@ def replace_github_videos(content: str):
         src_txt = pre_src + replacements[0] + post_src
         if src_txt in content:
             fin_txt = pre_fin + replacements[1] + post_fin
-            content = content.replace(
-                src_txt, fin_txt
-            )
+            content = content.replace(src_txt, fin_txt)
             print(f"Replacing '{src_txt}' with '{fin_txt}'")
             if not replacements[2]:
                 success = download_video(replacements[0], replacements[1])
