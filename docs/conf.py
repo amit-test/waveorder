@@ -238,25 +238,11 @@ sphinx_gallery_conf = {
     "write_computation_times": False,
 }
 
-ultimate_replacements = {
-        "{https://github.com/user-attachments/assets/a0a8bffb-bf81-4401-9ace-3b4955436b57}": "<video src=\"https://openpolscope.org/test/parts.mp4\" controls autoplay></video>",
-    }
-
 def setup(app):
     app.connect("source-read", transform_md_links)
-    app.add_config_value('ultimate_replacements', {}, True)
-    app.connect('source-read', ultimateReplace)
-
 
 def transform_md_links(app, docname, source):
     content = source[0]
     # Transform .md links to .html for Sphinx build
-    content = re.sub(r"\]\(([^)#]+?)\.md(#[^)]+)?\)", r"](\1.html\2)", content)
+    content = re.sub(r"\]\(([^)#]+?)\.md(#[^)]+)?\)", r"](\1.html\2)", content)    
     source[0] = content
-
-# This will replace the keys with defined text
-def ultimateReplace(app, docname, source):
-        result = source[0]
-        for key in app.config.ultimate_replacements:
-            result = result.replace(key, app.config.ultimate_replacements[key])
-        source[0] = result
