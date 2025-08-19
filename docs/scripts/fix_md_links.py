@@ -20,13 +20,17 @@ def fix_markdown_links(html_file):
         f.truncate()
 
 def replace_github_videos(source:str):
+    pre = "<a class=\"github reference external\" href=\""
+    post = "\">user-attachments/assets</a>"
     for replacements in ultimate_replacements:
-        content = source.replace(replacements[0], replacements[1])
+        content = source.replace(pre+replacements[0]+post, replacements[1])
         download_video(replacements[0], replacements[2])
     return content
 
 def download_video(src_url, filename):    
     output_dir = os.environ.get("READTHEDOCS_OUTPUT", "_build/html/_static/videos/")
+    print(src_url)
+    print(output_dir)
     resp = requests.get(src_url) # making requests to server
     with open(os.path.join(output_dir,filename), "wb") as f: # opening a file handler to create new file 
         f.write(resp.content) # writing content to file
