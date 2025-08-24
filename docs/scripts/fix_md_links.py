@@ -15,6 +15,21 @@ ultimate_replacements = [
         "figure-slideshow.mp4",
         False,
     ],
+    [
+        "https://user-images.githubusercontent.com/9554101/271128301-cc71da57-df6f-401b-a955-796750a96d88.mov",
+        "2023-05-zebrafish.mov",
+        False,
+    ],
+    [
+        "https://user-images.githubusercontent.com/9554101/271128510-aa2180af-607f-4c0c-912c-c18dc4f29432.mp4",
+        "2023-08-zebrafish-embryo.mp4",
+        False,
+    ],
+    [
+        "https://user-images.githubusercontent.com/9554101/271128510-aa2180af-607f-4c0c-912c-c18dc4f29432.mp4",
+        "2023-10-05-recOrder-build-v2.mp4",
+        False,
+    ],
 ]
 
 
