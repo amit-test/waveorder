@@ -73,7 +73,7 @@ def replace_github_videos(content: str):
 
 # <a class="reference external" href="https://user-images.githubusercontent.com/9554101/271128301-cc71da57-df6f-401b-a955-796750a96d88.mov">https://user-images.githubusercontent.com/9554101/271128301-cc71da57-df6f-401b-a955-796750a96d88.mov</a>
 def replace_github_videos1(content: str):
-    pre_src = '<a class="github reference external" href="'
+    pre_src = '<a class="reference external" href="'
     post_src1 = '">'
     post_src2 = "</a>"
     pre_fin = '<video src="https://waveorder.readthedocs.io/en/latest/_static/videos/'
