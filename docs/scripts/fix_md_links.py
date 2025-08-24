@@ -26,7 +26,7 @@ ultimate_replacements = [
         False,
     ],
     [
-        "https://user-images.githubusercontent.com/9554101/271128510-aa2180af-607f-4c0c-912c-c18dc4f29432.mp4",
+        "https://user-images.githubusercontent.com/9554101/273073475-70afb05a-1eb7-4019-9c42-af3e07bef723.mp4",
         "2023-10-05-recOrder-build-v2.mp4",
         False,
     ],
